@@ -1,0 +1,12 @@
+{
+  "name": "architecture-website",
+  "version": "1.0.0",
+  "description": "Premium Architecture Website",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

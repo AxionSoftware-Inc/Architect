@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Insights - Architecture</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div data-component="navbar"></div>
+
+    <section class="page-header container">
+        <h1>Latest <span class="highlight">News</span></h1>
+        <p>Updates from the world of architecture and design.</p>
+    </section>
+
+    <section class="container news-container">
+        <div class="news-grid">
+            <article class="news-card glass">
+                <div class="news-date">Jan 27, 2026</div>
+                <h2>Sustainable Architecture Trends for 2026</h2>
+                <p>Exploring the new materials and methods shaping the future of eco-friendly construction.</p>
+                <a href="#" class="btn btn-sm">Read More</a>
+            </article>
+
+            <article class="news-card glass">
+                <div class="news-date">Jan 15, 2026</div>
+                <h2>Award Winning Design: The Cloud Tower</h2>
+                <p>Our team accepts the prestigious award for the innovative Cloud Tower project.</p>
+                <a href="#" class="btn btn-sm">Read More</a>
+            </article>
+
+            <article class="news-card glass">
+                <div class="news-date">Dec 20, 2025</div>
+                <h2>Urban Renewal in Metropolis</h2>
+                <p>How we are transforming old industrial zones into vibrant community spaces.</p>
+                <a href="#" class="btn btn-sm">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <div data-component="footer"></div>
+
+    <script src="/assets/js/main.js"></script>
+
+    <style>
+        .page-header {
+            padding-top: 150px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .news-card {
+            padding: 30px;
+            transition: all var(--transition-speed);
+        }
+
+        .news-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .news-date {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .news-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .news-card p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .btn-sm {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .btn-sm:hover {
+            background: var(--primary-color);
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Loyihalar — Company Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="assets/img/favicon.png" />
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <main id="main">
+        <section class="container" style="padding-top:60px; padding-bottom:40px">
+            <div class="section-header fade-up">
+                <span class="section-label">Portfolio</span>
+                <h1 class="section-title">Barcha loyihalar</h1>
+                <p class="section-desc">Bizning eng so‘nggi arxitektura va dizayn ishlari bilan tanishing.</p>
+            </div>
+
+            <!-- Filters (Mockup) -->
+            <div class="fade-up" style="margin-bottom:40px; display:flex; gap:12px; flex-wrap:wrap">
+                <a href="#" class="btn btn-primary">Barchasi</a>
+                <a href="#" class="btn btn-ghost">Turar joy</a>
+                <a href="#" class="btn btn-ghost">Tijorat</a>
+                <a href="#" class="btn btn-ghost">Jamoat</a>
+                <a href="#" class="btn btn-ghost">Interyer</a>
+            </div>
+
+            <!-- Reuse the grid classes but expand content -->
+            <div class="projects-grid">
+                <!-- We can duplicate items for demo purposes -->
+                <a href="project-detail.html" class="project-card fade-up stagger-1">
+                    <div class="project-img-wrap"><img src="assets/img/p1.jpg" class="project-img"></div>
+                    <div class="project-content">
+                        <div class="project-tags"><span class="tag">Turar joy</span></div>
+                        <h3 class="project-title">Green Valley Residence</h3>
+                        <div class="project-location">📍 Toshkent</div>
+                    </div>
+                </a>
+                <a href="project-detail.html" class="project-card fade-up stagger-2">
+                    <div class="project-img-wrap"><img src="assets/img/p2.jpg" class="project-img"></div>
+                    <div class="project-content">
+                        <div class="project-tags"><span class="tag">Biznes</span></div>
+                        <h3 class="project-title">Tech Plaza Tower</h3>
+                        <div class="project-location">📍 Samarqand</div>
+                    </div>
+                </a>
+                <a href="project-detail.html" class="project-card fade-up stagger-3">
+                    <div class="project-img-wrap"><img src="assets/img/p3.jpg" class="project-img"></div>
+                    <div class="project-content">
+                        <div class="project-tags"><span class="tag">Jamoat</span></div>
+                        <h3 class="project-title">Central Library</h3>
+                        <div class="project-location">📍 Buxoro</div>
+                    </div>
+                </a>
+                <a href="project-detail.html" class="project-card fade-up stagger-1">
+                    <div class="project-img-wrap"><img src="assets/img/p4.jpg" class="project-img"></div>
+                    <div class="project-content">
+                        <div class="project-tags"><span class="tag">Interyer</span></div>
+                        <h3 class="project-title">Modern Loft</h3>
+                        <div class="project-location">📍 Toshkent</div>
+                    </div>
+                </a>
+                <a href="project-detail.html" class="project-card fade-up stagger-2">
+                    <div class="project-img-wrap"><img src="assets/img/p5.jpg" class="project-img"></div>
+                    <div class="project-content">
+                        <div class="project-tags"><span class="tag">Villa</span></div>
+                        <h3 class="project-title">Sunset Hill</h3>
+                        <div class="project-location">📍 Bo‘stonliq</div>
+                    </div>
+                </a>
+                <a href="project-detail.html" class="project-card fade-up stagger-3">
+                    <div class="project-img-wrap"><img src="assets/img/p6.jpg" class="project-img"></div>
+                    <div class="project-content">
+                        <div class="project-tags"><span class="tag">Savdo</span></div>
+                        <h3 class="project-title">Grand Retail</h3>
+                        <div class="project-location">📍 Namangan</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Overriding include logic specifically for this page if needed, 
+        // or reusing include.js which runs on load.
+        // However, include.js looks for #navbar, #hero etc.
+        // Here we have #navbar and #footer.
+        // We don't have #hero, #projects, etc.
+        // include.js will just skip missing IDs (safe).
+    </script>
+</body>
+
+</html>

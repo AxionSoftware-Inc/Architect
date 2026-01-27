@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Kontaktlar — Company Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <main id="main">
+        <section class="container" style="padding-top:60px">
+            <div class="section-header fade-up">
+                <span class="section-label">Aloqa</span>
+                <h1 class="section-title">Biz bilan bog'laning</h1>
+            </div>
+
+            <div class="contacts-split">
+                <div class="contact-info-card fade-up stagger-1">
+                    <form style="display:flex; flex-direction:column; gap:20px">
+                        <div>
+                            <label class="c-label">Ismingiz</label>
+                            <input type="text"
+                                style="width:100%; padding:12px; border-radius:10px; border:1px solid var(--line); background:rgba(255,255,255,0.05); color:white"
+                                placeholder="Ism Sharifingiz">
+                        </div>
+                        <div>
+                            <label class="c-label">Telefon raqamingiz</label>
+                            <input type="text"
+                                style="width:100%; padding:12px; border-radius:10px; border:1px solid var(--line); background:rgba(255,255,255,0.05); color:white"
+                                placeholder="+998 90 123 45 67">
+                        </div>
+                        <div>
+                            <label class="c-label">Xabar matni</label>
+                            <textarea
+                                style="width:100%; padding:12px; border-radius:10px; border:1px solid var(--line); background:rgba(255,255,255,0.05); color:white; min-height:100px"
+                                placeholder="Savol yoki taklifingiz..."></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="justify-content:center">Yuborish</button>
+                    </form>
+                </div>
+
+                <div class="map-box fade-up stagger-2">
+                    <iframe class="map-frame"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.173744636324!2d69.27973231572528!3d41.32671597927006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b51d5337e6f%3A0x6e9a667362c4a96!2sTashkent%20TV%20Tower!5e0!3m2!1sen!2s!4v1645063467234!5m2!1sen!2s"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Architecture</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div data-component="navbar"></div>
+
+    <section class="page-header container">
+        <h1>About <span class="highlight">Us</span></h1>
+        <p>We are a team of visionary architects.</p>
+    </section>
+
+    <section class="container about-content">
+        <div class="glass about-card">
+            <h2>Our Philosophy</h2>
+            <p>We believe that architecture is more than just building; it's about creating environments that improve
+                lives. Our designs are rooted in sustainability, innovation, and timeless aesthetics.</p>
+        </div>
+
+        <div class="team-section">
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member glass">
+                    <div class="member-avatar"></div>
+                    <h3>Alex Arch</h3>
+                    <p>Lead Architect</p>
+                </div>
+                <div class="team-member glass">
+                    <div class="member-avatar"></div>
+                    <h3>Sarah Design</h3>
+                    <p>Interior Designer</p>
+                </div>
+                <div class="team-member glass">
+                    <div class="member-avatar"></div>
+                    <h3>John Build</h3>
+                    <p>Project Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div data-component="footer"></div>
+
+    <script src="/assets/js/main.js"></script>
+
+    <style>
+        .page-header {
+            padding-top: 150px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+
+        .about-card {
+            padding: 40px;
+            margin-bottom: 60px;
+            margin-top: 20px;
+        }
+
+        .about-card p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            max-width: 800px;
+        }
+
+        .team-section {
+            text-align: center;
+        }
+
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            width: 250px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .member-avatar {
+            width: 100px;
+            height: 100px;
+            background: #334155;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+        }
+
+        .team-member h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+    </style>
+</body>
+
+</html>

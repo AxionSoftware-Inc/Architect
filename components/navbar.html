@@ -1,0 +1,52 @@
+<!-- components/navbar.html -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Bosh sahifa">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">
+        <strong>COMPANY</strong>
+        <small>Group</small>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Asosiy menyu">
+      <a data-nav class="nav-link" href="projects.html">Loyihalar</a>
+      <a data-nav class="nav-link" href="about.html">Kompaniya</a>
+      <a data-nav class="nav-link" href="news.html">Yangiliklar</a>
+      <a data-nav class="nav-link" href="contacts.html">Kontakt</a>
+    </nav>
+
+    <div class="header-actions">
+      <!-- Language switch (hozircha UI; keyin i18n ulaymiz) -->
+      <div class="lang">
+        <button class="lang-btn" type="button" aria-label="Tilni tanlash">
+          UZ <span class="chev" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-menu" role="menu">
+          <!-- Keyin: /uz/, /ru/, /en/ yoki i18n json -->
+          <a role="menuitem" href="index.html" aria-current="true">O‘zbek</a>
+          <a role="menuitem" href="index.html">Русский</a>
+          <a role="menuitem" href="index.html">English</a>
+        </div>
+      </div>
+
+      <a class="btn btn-primary" href="appeal.html">Murojaat</a>
+
+      <!-- Mobile menu button -->
+      <button class="icon-btn" type="button" data-menu-btn aria-expanded="false" aria-label="Menyuni ochish">
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile panel -->
+  <div class="mobile-panel" data-menu-panel data-open="false">
+    <div class="container mobile-inner">
+      <a data-nav class="nav-link" href="projects.html">Loyihalar</a>
+      <a data-nav class="nav-link" href="about.html">Kompaniya</a>
+      <a data-nav class="nav-link" href="news.html">Yangiliklar</a>
+      <a data-nav class="nav-link" href="contacts.html">Kontakt</a>
+      <a class="btn btn-primary" href="appeal.html" style="width:100%;justify-content:center;">Murojaat</a>
+    </div>
+  </div>
+</header>

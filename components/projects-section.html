@@ -1,0 +1,90 @@
+<section id="projects" class="projects">
+    <div class="container">
+        <h2>Featured <span class="highlight">Projects</span></h2>
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card glass">
+                <div class="project-image">
+                    <div class="placeholder-img"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Skyline Tower</h3>
+                    <p>A modern skyscraper redefining the city skyline.</p>
+                    <a href="#" class="read-more">View Details &rarr;</a>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="project-card glass">
+                <div class="project-image">
+                    <div class="placeholder-img" style="background: linear-gradient(45deg, #10b981, #3b82f6);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Eco Villa</h3>
+                    <p>Sustainable living harmonized with nature.</p>
+                    <a href="#" class="read-more">View Details &rarr;</a>
+                </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="project-card glass">
+                <div class="project-image">
+                    <div class="placeholder-img" style="background: linear-gradient(45deg, #f59e0b, #ef4444);"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Urban Center</h3>
+                    <p>A community hub for culture and commerce.</p>
+                    <a href="#" class="read-more">View Details &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .project-card {
+        overflow: hidden;
+        transition: transform var(--transition-speed);
+    }
+
+    .project-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .project-image {
+        height: 200px;
+        background: #1e293b;
+        overflow: hidden;
+    }
+
+    .placeholder-img {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+        opacity: 0.8;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    .project-info h3 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .project-info p {
+        color: #94a3b8;
+        margin-bottom: 15px;
+    }
+
+    .read-more {
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+</style>
